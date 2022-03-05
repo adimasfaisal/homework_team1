@@ -1,19 +1,21 @@
 import java.util.Date;
 
 public class Transaction {
-    private Date date;
+    //private Date date;
     private String transactionType;
     private int amount;
+    private int id;
 
-    public Transaction(String transactionType, int amount) {
-        this.date = new Date();
+    public Transaction(int id, String transactionType, int amount) {
         this.transactionType = transactionType;
         this.amount = amount;
+        this.id = id;
     }
 
-    public Date getDate() {
-        return date;
-    }
+    public int getId() {return id;}
+//    public Date getDate() {
+//        return date;
+//    }
 
     public int getAmount() {
         return amount;
